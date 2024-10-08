@@ -1,0 +1,33 @@
+{
+  "status": "success",
+  "message": "顧客一覧を取得しました。",
+  "count": 4,
+  "skip": 0,
+  "limit": 10,
+  "customers": [
+    {
+      "id": 1,
+      "name": "東計 太郎",
+      "phoneNumber": "080-1234-4567",
+      "birthDate": "2024-10-03"
+    },
+    {
+      "id": 3,
+      "name": "東計 光男",
+      "phoneNumber": "090-0900-0990",
+      "birthDate": "2000-01-02"
+    },
+    {
+      "id": 4,
+      "name": "東計 花子",
+      "phoneNumber": "0120-117-117",
+      "birthDate": "2000-01-01"
+    },
+    {
+      "id": 5,
+      "name": "string",
+      "phoneNumber": "string",
+      "birthDate": "2024-10-04"
+    }
+  ]
+}
