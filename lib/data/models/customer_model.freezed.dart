@@ -21,15 +21,15 @@ CustomerModel _$CustomerModelFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$CustomerModel {
   @JsonKey(name: "status")
-  String? get status => throw _privateConstructorUsedError;
+  String? get status => throw _privateConstructorUsedError; // APIレスポンスのステータス
   @JsonKey(name: "message")
-  String? get message => throw _privateConstructorUsedError;
+  String? get message => throw _privateConstructorUsedError; // APIレスポンスのメッセージ
   @JsonKey(name: "count")
-  int? get count => throw _privateConstructorUsedError;
+  int? get count => throw _privateConstructorUsedError; // 顧客の総数
   @JsonKey(name: "skip")
-  int? get skip => throw _privateConstructorUsedError;
+  int? get skip => throw _privateConstructorUsedError; // ページネーションのスキップ数
   @JsonKey(name: "limit")
-  int? get limit => throw _privateConstructorUsedError;
+  int? get limit => throw _privateConstructorUsedError; // ページネーションの制限数
   @JsonKey(name: "customers")
   List<Customer>? get customers => throw _privateConstructorUsedError;
 
@@ -178,7 +178,7 @@ class __$$CustomerModelImplCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$CustomerModelImpl implements _CustomerModel {
-  const _$CustomerModelImpl(
+  _$CustomerModelImpl(
       {@JsonKey(name: "status") this.status,
       @JsonKey(name: "message") this.message,
       @JsonKey(name: "count") this.count,
@@ -193,19 +193,25 @@ class _$CustomerModelImpl implements _CustomerModel {
   @override
   @JsonKey(name: "status")
   final String? status;
+// APIレスポンスのステータス
   @override
   @JsonKey(name: "message")
   final String? message;
+// APIレスポンスのメッセージ
   @override
   @JsonKey(name: "count")
   final int? count;
+// 顧客の総数
   @override
   @JsonKey(name: "skip")
   final int? skip;
+// ページネーションのスキップ数
   @override
   @JsonKey(name: "limit")
   final int? limit;
+// ページネーションの制限数
   final List<Customer>? _customers;
+// ページネーションの制限数
   @override
   @JsonKey(name: "customers")
   List<Customer>? get customers {
@@ -257,7 +263,7 @@ class _$CustomerModelImpl implements _CustomerModel {
 }
 
 abstract class _CustomerModel implements CustomerModel {
-  const factory _CustomerModel(
+  factory _CustomerModel(
           {@JsonKey(name: "status") final String? status,
           @JsonKey(name: "message") final String? message,
           @JsonKey(name: "count") final int? count,
@@ -271,19 +277,19 @@ abstract class _CustomerModel implements CustomerModel {
 
   @override
   @JsonKey(name: "status")
-  String? get status;
+  String? get status; // APIレスポンスのステータス
   @override
   @JsonKey(name: "message")
-  String? get message;
+  String? get message; // APIレスポンスのメッセージ
   @override
   @JsonKey(name: "count")
-  int? get count;
+  int? get count; // 顧客の総数
   @override
   @JsonKey(name: "skip")
-  int? get skip;
+  int? get skip; // ページネーションのスキップ数
   @override
   @JsonKey(name: "limit")
-  int? get limit;
+  int? get limit; // ページネーションの制限数
   @override
   @JsonKey(name: "customers")
   List<Customer>? get customers;
@@ -303,11 +309,11 @@ Customer _$CustomerFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$Customer {
   @JsonKey(name: "id")
-  int? get id => throw _privateConstructorUsedError;
+  int? get id => throw _privateConstructorUsedError; // 顧客のID
   @JsonKey(name: "name")
-  String? get name => throw _privateConstructorUsedError;
+  String? get name => throw _privateConstructorUsedError; // 顧客の名前
   @JsonKey(name: "phoneNumber")
-  String? get phoneNumber => throw _privateConstructorUsedError;
+  String? get phoneNumber => throw _privateConstructorUsedError; // 顧客の電話番号
   @JsonKey(name: "birthDate")
   DateTime? get birthDate => throw _privateConstructorUsedError;
 
@@ -443,12 +449,15 @@ class _$CustomerImpl implements _Customer {
   @override
   @JsonKey(name: "id")
   final int? id;
+// 顧客のID
   @override
   @JsonKey(name: "name")
   final String? name;
+// 顧客の名前
   @override
   @JsonKey(name: "phoneNumber")
   final String? phoneNumber;
+// 顧客の電話番号
   @override
   @JsonKey(name: "birthDate")
   final DateTime? birthDate;
@@ -504,13 +513,13 @@ abstract class _Customer implements Customer {
 
   @override
   @JsonKey(name: "id")
-  int? get id;
+  int? get id; // 顧客のID
   @override
   @JsonKey(name: "name")
-  String? get name;
+  String? get name; // 顧客の名前
   @override
   @JsonKey(name: "phoneNumber")
-  String? get phoneNumber;
+  String? get phoneNumber; // 顧客の電話番号
   @override
   @JsonKey(name: "birthDate")
   DateTime? get birthDate;

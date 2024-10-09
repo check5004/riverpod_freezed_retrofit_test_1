@@ -13,19 +13,13 @@ part 'customer_model.g.dart';
 @freezed
 class CustomerModel with _$CustomerModel {
   // CustomerModelのファクトリコンストラクタ
-  const factory CustomerModel({
-    // APIレスポンスのステータス
-    @JsonKey(name: "status") String? status,
-    // APIレスポンスのメッセージ
-    @JsonKey(name: "message") String? message,
-    // 顧客の総数
-    @JsonKey(name: "count") int? count,
-    // ページネーションのスキップ数
-    @JsonKey(name: "skip") int? skip,
-    // ページネーションの制限数
-    @JsonKey(name: "limit") int? limit,
-    // 顧客リスト
-    @JsonKey(name: "customers") List<Customer>? customers,
+  factory CustomerModel({
+    @JsonKey(name: "status") String? status, // APIレスポンスのステータス
+    @JsonKey(name: "message") String? message, // APIレスポンスのメッセージ
+    @JsonKey(name: "count") int? count, // 顧客の総数
+    @JsonKey(name: "skip") int? skip, // ページネーションのスキップ数
+    @JsonKey(name: "limit") int? limit, // ページネーションの制限数
+    @JsonKey(name: "customers") List<Customer>? customers, // 顧客リスト
   }) = _CustomerModel;
 
   // JSONからCustomerModelオブジェクトを生成するファクトリメソッド
@@ -40,14 +34,10 @@ class CustomerModel with _$CustomerModel {
 class Customer with _$Customer {
   // Customerのファクトリコンストラクタ
   const factory Customer({
-    // 顧客のID
-    @JsonKey(name: "id") int? id,
-    // 顧客の名前
-    @JsonKey(name: "name") String? name,
-    // 顧客の電話番号
-    @JsonKey(name: "phoneNumber") String? phoneNumber,
-    // 顧客の生年月日
-    @JsonKey(name: "birthDate") DateTime? birthDate,
+    @JsonKey(name: "id") int? id, // 顧客のID
+    @JsonKey(name: "name") String? name, // 顧客の名前
+    @JsonKey(name: "phoneNumber") String? phoneNumber, // 顧客の電話番号
+    @JsonKey(name: "birthDate") DateTime? birthDate, // 顧客の生年月日
   }) = _Customer;
 
   // JSONからCustomerオブジェクトを生成するファクトリメソッド

@@ -21,13 +21,13 @@ CustomerSendModel _$CustomerSendModelFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$CustomerSendModel {
   @JsonKey(name: "name")
-  String? get name => throw _privateConstructorUsedError;
+  String? get name => throw _privateConstructorUsedError; // 顧客の名前
   @JsonKey(name: "phone_number")
-  String? get phoneNumber => throw _privateConstructorUsedError;
+  String? get phoneNumber => throw _privateConstructorUsedError; // 顧客の電話番号
   @JsonKey(name: "birth_date")
-  DateTime? get birthDate => throw _privateConstructorUsedError;
+  DateTime? get birthDate => throw _privateConstructorUsedError; // 顧客の生年月日
   @JsonKey(name: "id")
-  int? get id => throw _privateConstructorUsedError;
+  int? get id => throw _privateConstructorUsedError; // 顧客のID
   @JsonKey(name: "delete_flag")
   bool? get deleteFlag => throw _privateConstructorUsedError;
 
@@ -177,15 +177,19 @@ class _$CustomerSendModelImpl implements _CustomerSendModel {
   @override
   @JsonKey(name: "name")
   final String? name;
+// 顧客の名前
   @override
   @JsonKey(name: "phone_number")
   final String? phoneNumber;
+// 顧客の電話番号
   @override
   @JsonKey(name: "birth_date")
   final DateTime? birthDate;
+// 顧客の生年月日
   @override
   @JsonKey(name: "id")
   final int? id;
+// 顧客のID
   @override
   @JsonKey(name: "delete_flag")
   final bool? deleteFlag;
@@ -246,16 +250,16 @@ abstract class _CustomerSendModel implements CustomerSendModel {
 
   @override
   @JsonKey(name: "name")
-  String? get name;
+  String? get name; // 顧客の名前
   @override
   @JsonKey(name: "phone_number")
-  String? get phoneNumber;
+  String? get phoneNumber; // 顧客の電話番号
   @override
   @JsonKey(name: "birth_date")
-  DateTime? get birthDate;
+  DateTime? get birthDate; // 顧客の生年月日
   @override
   @JsonKey(name: "id")
-  int? get id;
+  int? get id; // 顧客のID
   @override
   @JsonKey(name: "delete_flag")
   bool? get deleteFlag;
